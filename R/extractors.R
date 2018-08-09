@@ -177,6 +177,7 @@
     arrange_value <- .TBL_ARRANGE[main_ranges]
     if (is.null(arrange_value))
         arrange_value <- x$schema
+    arrange_value <- arrange_value[lengths(arrange_value) != 0L]
     do.call(dplyr::select, c(list(table), as.list(fields))) %>%
         arrange_(.dots=arrange_value) %>% distinct()
 }
