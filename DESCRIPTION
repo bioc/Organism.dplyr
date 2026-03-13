@@ -1,6 +1,6 @@
 Package: Organism.dplyr
 Title: dplyr-based Access to Bioconductor Annotation Resources
-Version: 1.39.0
+Version: 1.39.1
 Authors@R: c(
         person(
             "Martin", "Morgan", email = "martin.morgan@roswellpark.org", 
@@ -28,3 +28,4 @@ Collate: src.R filter.R table-handlers.R extractors.R extractor-methods.R select
 VignetteBuilder: knitr
 biocViews: Annotation, Sequencing, GenomeAnnotation
 BugReports: https://github.com/Bioconductor/Organism.dplyr/issues
+PackageStatus: Deprecated
